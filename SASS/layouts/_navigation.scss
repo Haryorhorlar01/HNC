@@ -1,0 +1,70 @@
+@import '../base/mixins';
+@import '../base/variables';
+// Fonnsize and color for utility later (h1 toggle a) .
+
+
+.nav {
+  font-family: 'DM Sans', sans-serif;
+  margin: 3.7rem 5rem;
+  position: relative;
+  @include flexCenter(row);
+
+
+
+  a {
+    color: #C59042;
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 2.5rem;
+  }
+
+
+  .list {
+    color: #fff;
+   
+    position: absolute;
+    left: 35.2%;
+    @include flexCenter(row);
+  
+  
+    &__items {
+      list-style-type: none;
+      margin: 0 2.5rem;
+      cursor: pointer;
+      
+      &:hover {
+        color: $color-primary-bentley;
+        transition: all .3s ease;
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+    color: $color-bentley-white;
+    border: 1px solid $color-primary-bentley;
+    padding: .7rem 4rem;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      border: none;
+      background-color: $color-primary-bentley;
+      color: #000;
+      transition: all .3s ease;
+    }
+  }
+
+  &__toggle {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+  }
+
+}

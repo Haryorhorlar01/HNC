@@ -1,0 +1,66 @@
+html {
+  font-size: 10px;
+}
+
+//   @include respond(tab-land) {
+//     font-size: 56.25%;;
+//   }
+
+//   @include respond(tab-port) {
+//     font-size: 50%;
+    
+//   }
+
+//   @include respond(tab-land) {
+//     font-size: 75%;
+   
+//   }  
+
+// }
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexCenter01() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// MEDIA QUERY BREAKPOINT
+/*
+0-600PX      PHONE
+600-900PX    TABLET PORTRAIT
+900PX-1200PX  TABLET LANDSCAPE
+(1200-1800)   NORMAL STYLE APPLY
+1800PX +      BIG DESKTOP
+*/
+
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop */
+
+// BREAKPOINTS
+// @mixin respond($breakpoint) {
+//   @if $breakboint == phone {
+//     @media only screen and (min-width: 375rem) {@content};
+//   }
+
+//   @if $breakboint == tab-port {
+//     @media only screen and (max-width: 767rem) {@content};
+//   }
+
+//   @if $breakboint ==  tab-land {
+//     @media only screen and (max-width: 75rem) {@content};
+//   }
+// }
+

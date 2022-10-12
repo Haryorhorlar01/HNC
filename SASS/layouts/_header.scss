@@ -1,0 +1,49 @@
+@import '../base/variables';
+
+
+header {
+  background: linear-gradient( to right,
+    rgba(0,0,0,.2), rgba(0,0,0,.2)
+  ), url(../pages/assets/img/bentley.png) no-repeat;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
+  .container {
+    width: 100%;
+    max-width: 110.5rem;
+    margin: 0 auto;
+    height: 100%;
+    margin: relative;
+  
+    .hero_heading {
+      color: #fff;
+      font-size: 48px;
+      font-family: $text-font;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      padding: 2rem;
+      transform: translate(-50%, -50%);
+    }
+
+    small {
+      font-size: 12px;
+      font-family: $text-font, sans-serif;
+      text-transform: uppercase;
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-25%, 0);
+      
+      .fa {
+        margin-left: .8rem;
+      }
+    }
+  }
+}
+
+
